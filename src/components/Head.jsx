@@ -7,7 +7,7 @@ import "../css/Head.css";
 
 const Head = () => {
   return (
-    <div className=" w-full firstHeadAnimation ">
+    <div className=" w-full firstHeadAnimation " id="About">
       <div className="flex justify-center items-center mt-12 py-10">
         <div className="bg-black border border-gray-700  text-white flex justify-center items-center gap-2  px-1 py-[0.3rem] rounded-md">
           <Heading

@@ -4,10 +4,10 @@ import TestimonialCarousal from "./TestimonialCarousal";
 
 const Testimonials = () => {
   return (
-    <div className="mb-20">
+    <div className="mb-20" id="Testimonial">
       <div className="flex justify-center items-center ">
         <Heading
-          paragraph={"Pricing"}
+          paragraph={"Testimonial"}
           className={
             "text-[#A1ADFF] px-7 py-2 border-none bg-[#17171a] rounded-md"
           }

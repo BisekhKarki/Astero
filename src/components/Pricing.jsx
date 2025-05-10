@@ -4,7 +4,7 @@ import PricingCard from "./PricingCard";
 
 const Pricing = () => {
   return (
-    <div className="mt-[12rem] mb-20 max-sm:mt-[3rem]">
+    <div className="mt-[12rem] mb-20 max-sm:mt-[3rem]" id="Pricing">
       <div className="flex justify-center items-center ">
         <Heading
           paragraph={"Pricing"}

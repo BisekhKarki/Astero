@@ -50,7 +50,7 @@ const Navbar = () => {
           <ul className="flex gap-4 text-md">
             {navLinks.map((item) => (
               <li className="text-gray-400 cursor-pointer" key={item.index}>
-                {item.name}
+                <a href={`#${item.name}`}> {item.name}</a>
               </li>
             ))}
           </ul>

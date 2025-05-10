@@ -1,23 +1,23 @@
 export const navLinks = [
   {
     index: 0,
-    name: "Pages",
-  },
-  {
-    index: 1,
     name: "Features",
   },
   {
-    index: 2,
+    index: 1,
     name: "Pricing",
   },
   {
-    index: 3,
+    index: 2,
     name: "About",
   },
   {
-    index: 4,
+    index: 3,
     name: "Contact",
+  },
+  {
+    index: 4,
+    name: "Testimonial",
   },
 ];
 

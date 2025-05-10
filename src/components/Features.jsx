@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const Features = () => {
   return (
-    <div className="mb-10 mt-44">
+    <div className="mb-10 mt-44" id="Features">
       <div className="flex justify-center items-center">
         <Heading
           paragraph={"Features"}
