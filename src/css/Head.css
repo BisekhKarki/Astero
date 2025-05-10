@@ -1,0 +1,136 @@
+@keyframes borderPulse {
+  0%,
+  100% {
+    border-color: #e5e7eb;
+  }
+  50% {
+    border-color: #000000;
+  }
+}
+
+.border-pulse {
+  animation: borderPulse 4s infinite;
+}
+
+@keyframes firstHead {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.firstHeadAnimation {
+  animation-name: firstHead;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes featuretHead {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.featureHeadAnimation {
+  animation: featuretHead linear 4s;
+  animation-timeline: view();
+}
+
+@keyframes oddDivCardFeature {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.oddCardDiv {
+  view-timeline-name: --oddTimeline;
+  view-timeline-axis: block;
+  animation-name: oddDivCardFeature;
+  animation-timeline: --oddTimeline;
+  animation-range: entry 0% cover 30%;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes evenDivCardFeature {
+  from {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.evenCardDiv {
+  view-timeline-name: --evenDivCardFeature;
+  view-timeline-axis: block;
+  animation-name: evenDivCardFeature;
+  animation-timeline: --evenDivCardFeature;
+  animation-range: entry 10% cover 50%;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes intergationAnime {
+  from {
+    opacity: 0;
+    transform: translateY(-90px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.integrationAnimation {
+  view-timeline-name: --intergationAnime;
+  view-timeline-axis: block;
+  animation-name: intergationAnime;
+  animation-timeline: --intergationAnime;
+  animation-range: entry 10% cover 50%;
+
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes priceCard {
+  from {
+    opacity: 0;
+    transform: translateY(-90px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.priceCardAnimation {
+  view-timeline-name: --priceCard;
+  view-timeline-axis: block;
+  animation-name: priceCard;
+  animation-timeline: --priceCard;
+  animation-range: entry 20% cover 70%;
+
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}

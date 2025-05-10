@@ -1,0 +1,45 @@
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: infinite-scroll 20s linear infinite;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+@keyframes borderAnimation {
+  0%,
+  100% {
+    border: 4px solid #5024ff;
+  }
+  50% {
+    border: 4px solid black;
+  }
+}
+
+.animatePriceBorder {
+  animation: borderAnimation 4s infinite;
+}
+
+@keyframes reviewScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-35%);
+  }
+}
+
+.animateReview {
+  animation: reviewScroll 50s linear infinite;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-transform: translateZ(0);
+}
